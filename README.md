@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Practice For Ontario G1 Test: Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This frontend program is a part of the *Practice For Ontario G1 Test* project. It works with the backend program developed by Spring Boot and MySQL.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This program helps you keep track of your progress in preparation for Ontario G1 test. You need to buy the *Ontario Driver's Study Guide* (over shown in the following figure) in order to access the test questions.
+![Cover of Ontario Driver's Study Guide](./src/assets/81N2MiKLAiL._SX679_.jpg)
 
-## Expanding the ESLint configuration
+The web page looks like the following figure. You answer each question by choosing one of the four chioces A, B, C, D. After you click the submit button, the pass rate and the number of attempts for this quesiton are updated immediately. The history of attempts is stored in your local MySQL database and therefore persists through program restarts.
+![sample webpage](./src/assets/sample_webpage.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Build
 
-- Configure the top-level `parserOptions` property like this:
+### Dependency: Node.js
+Node.js is required to build the program. See [How to install Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs) if you do not have it.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Change into the root directory and run
+```sh
+npm install
 ```
+to resolve other dependencies.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Build React.js with Vite
+
+Run the following command
+```sh
+npm run build
+```
+Then you will find a directory `dist` created in the root directory.
+
+## Run
+
+You need to run the backend program before this frontend program. See the **link** for instructions on how to run the backend program.
+
+While the backend is running, run the following command
+```sh
+npm run dev
+```
+and then go to the link http://localhost:5173 in your browser.
