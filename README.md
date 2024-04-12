@@ -4,7 +4,7 @@ This program is the frontend component of the *Practice For Ontario G1 Test* pro
 
 ## Overview
 
-This program helps you keep track of your progress in preparation for Ontario G1 test. You need to buy the *Ontario Driver's Study Guide* (over shown in the following figure) in order to access the test questions.
+This program helps you keep track of your progress in preparation for Ontario G1 test. You need to buy the *Ontario Driver's Study Guide* (cover shown in the following figure) in order to access the test questions.
 ![Cover of Ontario Driver's Study Guide](./src/assets/81N2MiKLAiL._SX679_.jpg "Cover of Ontario Driver's Study Guide")
 
 The web page looks like the following figure. You answer each question by choosing one of the four chioces A, B, C, D. After you click the submit button, the pass rate and the number of attempts for this quesiton are updated immediately. The history of attempts is stored in your local MySQL database and therefore persists through program restarts.
