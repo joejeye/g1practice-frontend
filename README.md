@@ -1,6 +1,6 @@
 # Practice For Ontario G1 Test: Frontend
 
-This program is the frontend component of the *Practice For Ontario G1 Test* project. It works with the [Practice For Ontario G1 Test: Backend](https://github.com/joejeye/g1practice-backend) developed by Spring Boot and MySQL.
+This program is the frontend component of the *Practice For Ontario G1 Test* project. It works with the [Practice For Ontario G1 Test: Backend](https://github.com/joejeye/g1practice-backend) developed with Spring Boot and MySQL.
 
 ## Overview
 
