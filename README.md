@@ -35,6 +35,6 @@ You need to run the backend program before this frontend program. See the **link
 
 While the backend is running, run the following command
 ```sh
-npm run dev
+npx vite
 ```
 and then go to the link http://localhost:5173 in your browser.
